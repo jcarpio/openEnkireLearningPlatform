@@ -4,7 +4,8 @@ import { MOCK_TRACKS, MOCK_USER_PROGRESS } from "@/lib/mockData";
 import { DIFFICULTY_LABELS, DIFFICULTY_COLORS, cn } from "@/lib/utils";
 
 export default function TracksPage() {
-  const categories = [...new Set(MOCK_TRACKS.map(t => t.category))];
+  const categoriesSet = new Set(MOCK_TRACKS.map(t => t.category));
+  const categories = Array.from(categoriesSet);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
