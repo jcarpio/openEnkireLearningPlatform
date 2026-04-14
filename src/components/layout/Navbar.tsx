@@ -11,8 +11,8 @@ import {
   Mic, BookMarked, Award
 } from "lucide-react";
 import { MOCK_USER, MOCK_USER_BADGES } from "@/lib/mockData";
-import { getLevelFromXp, formatXp } from "@/lib/types";
-import { cn } from "@/lib/utils";
+import { getLevelFromXp } from "@/lib/types";
+import { cn, formatXp } from "@/lib/utils";
 
 // ── Menu definitions ────────────────────────────────────────────────
 
