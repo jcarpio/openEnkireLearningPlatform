@@ -31,7 +31,7 @@ export default function MentorPage() {
   const selectedSub = submissions.find(s => s.id === selected);
 
   function handleResolve(id: string) {
-    setResolved(prev => new Set([...prev, id]));
+    setResolved(prev => new Set(Array.from(prev).concat(id)));
     setSelected(null);
   }
 
